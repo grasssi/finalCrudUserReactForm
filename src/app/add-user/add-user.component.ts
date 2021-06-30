@@ -6,6 +6,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./add-user.component.scss']
 })
 export class AddUserComponent implements OnInit {
+  //Creation du FormGoupe
   profileForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),

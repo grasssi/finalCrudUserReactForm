@@ -11,6 +11,8 @@ export class UpdateUserComponent implements OnInit {
   users = JSON.parse(localStorage.getItem('registration') || '[]');
   constructor(private activatetRoute: ActivatedRoute, private router: Router, private fb: FormBuilder) { }
   index: any;
+  //The FormBuilder provides syntactic sugar that shortens creating instances of a FormControl,
+  // FormGroup, or FormArray. It reduces the amount of boilerplate needed to build complex forms.
   profileForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
