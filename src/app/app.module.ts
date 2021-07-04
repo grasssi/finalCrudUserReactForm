@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { PwdPipe } from './pipes/pwd.pipe';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -14,13 +16,17 @@ import { AddUserComponent } from './add-user/add-user.component';
     AppComponent,
     ListUserComponent,
     UpdateUserComponent,
-    AddUserComponent
+    AddUserComponent,
+    PwdPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    CommonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,13 +6,13 @@
         <strong>Sign up</strong>
       </h5>
     </mdb-card-header>
-  
+
     <!--Card content-->
     <mdb-card-body class="px-lg-5 pt-0">
-  
+
       <!-- Form -->
       <form [formGroup]="profileForm" class="text-center" style="color: #757575;">
-  
+
         <div class="form-row">
           <div class="col">
             <!-- First name -->
@@ -29,13 +29,13 @@
             </div>
           </div>
         </div>
-  
+
         <!-- E-mail -->
         <div class="md-form mt-0">
           <input type="email" id="materialRegisterFormEmail"  formControlName="email" class="form-control" mdbInput >
           <label for="materialRegisterFormEmail">E-mail</label>
         </div>
-  
+
         <!-- Password -->
         <div class="md-form">
           <input type="password" id="materialRegisterFormPassword" class="form-control"
@@ -45,21 +45,21 @@
             At least 8 characters and 1 digit
           </small>
         </div>
-  
+
         <!-- Phone number -->
         <div class="md-form">
           <input type="text" id="materialRegisterFormPhone" class="form-control"
             aria-describedby="materialRegisterFormPhoneHelpBlock"  formControlName="phone" mdbInput>
           <label for="materialRegisterFormPhone">Phone number</label>
           <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-  
+
           </small>
         </div>
-  
-  
+
+
         <!-- Sign up button -->
         <button mdbBtn color="info" class="waves-light" mdbWavesEffect (click)='updateUser()'>Update</button>
-  
+
         <a type="button" class="light-blue-text mx-2">
           <mdb-icon fab icon="facebook"></mdb-icon>
         </a>
@@ -70,21 +70,21 @@
           <mdb-icon fab icon="linkedin"></mdb-icon>
         </a>
         <a type="button" class="light-blue-text mx-2">
-          <mdb-icon fab icon="heart"></mdb-icon>
+          <!-- <mdb-icon fab icon="heart"></mdb-icon> -->
         </a>
-  
+
         <hr>
-  
+
         <!-- Terms of service -->
         <p>By clicking
           <em>Sign up</em> you agree to our
           <a href="" target="_blank">terms of service</a>.
         </p>
-  
+
       </form>
       <!-- Form -->
-  
+
     </mdb-card-body>
-  
+
   </mdb-card>
   <!-- Material form register -->
