@@ -57,7 +57,8 @@
         <label for="materialRegisterFormrePassword">rePassword</label>
         <!-- <div *ngif="profileForm.get('rePassword')?.errors.confirmPasswordValidator"> -->
           <!-- <div *ngIf="profileForm.errors?.confirmPasswordValidator">Passwords must match</div> -->
-          <mdb-error *ngIf="f.rePassword.errors?.ConfirmPasswordValidator"> Passsword and Confirm Password didn't match.</mdb-error>
+          <!-- <mdb-error *ngIf="f.rePassword.errors?.ConfirmPasswordValidator"> Passsword and Confirm Password didn't match.</mdb-error> -->
+          <mdb-error *ngIf="profileForm.errors?.mismatchedPasswords"> Passsword and Confirm Password didn't match.</mdb-error>
 
 
          </div>
